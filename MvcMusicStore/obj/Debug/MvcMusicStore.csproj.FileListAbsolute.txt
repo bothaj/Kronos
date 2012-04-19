@@ -1,0 +1,14 @@
+C:\Dev\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Dev\MvcMusicStore\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Dev\MvcMusicStore\MvcMusicStore\bin\EntityFramework.dll
+C:\Dev\MvcMusicStore\MvcMusicStore\bin\EntityFramework.xml
+C:\Dev\MvcMusicStore\MvcMusicStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+C:\Dev\MvcMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
+C:\Dev2\Kronos\MvcMusicStore\bin\MvcMusicStore.dll
+C:\Dev2\Kronos\MvcMusicStore\bin\MvcMusicStore.pdb
+C:\Dev2\Kronos\MvcMusicStore\bin\EntityFramework.dll
+C:\Dev2\Kronos\MvcMusicStore\bin\EntityFramework.xml
+C:\Dev2\Kronos\MvcMusicStore\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev2\Kronos\MvcMusicStore\obj\Debug\MvcMusicStore.dll
+C:\Dev2\Kronos\MvcMusicStore\obj\Debug\MvcMusicStore.pdb

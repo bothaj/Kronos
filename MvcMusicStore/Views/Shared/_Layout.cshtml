@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+    <title>@ViewBag.Title</title>
+    <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/jquery.divcorners.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/themes/south-street/jquery-ui-1.8.13.custom.css")" rel="stylesheet" type="text/css" />
+
+    internet
+    <script src="@Url.Content("~/Scripts/jquery.bgFade.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.bgFade.min.js")" type="text/javascript"></script>
+    <script src="@Url.Content("~/Scripts/jquery.divcorners.min.js")" type="text/javascript"></script>
+
+  <script type="text/javascript">
+      // Dialog
+
+      $(document).ready(function () {
+
+          // This is the maximum definition
+          $("rounddiv").dcCreate({
+              imgPrefix: "/images/",
+              fileType: ".gif",
+              expand: 4,           // optional
+              radius: 0,           // optional, Note: Radius must be greater than expand. See Understand the Parameters
+              position: "inside",  // optional
+              resize: "img",       // optional
+              exclude: "left, top" // optional
+          }, true);                // Note: This parameter is optional. By default it's true.
+          // This parameter controls whether parent .dCorner instances will be resized.
+
+          // This is the recommended definition
+          $("rounddiv").dcCreate({
+              imgPrefix: "/images/dCorner-",
+              fileType: ".gif",
+              expand: 10
+          });
+
+          $("#accordion").accordion();
+     
+
+      // Tabs
+      
+      $('#tabs').tabs();
+
+      // Dialog Link
+      $('#dialog_link').click(function () {
+              $('#dialog').dialog('open');
+              return false;
+          });
+
+      // Datepicker
+      $('#datepicker').datepicker({
+          inline: true
+      });
+
+      // Slider
+      $('#slider').slider({
+          range: true,
+          values: [17, 67]
+      });
+
+      // Progressbar
+      $("#progressbar").progressbar({
+          value: 20
+      });
+
+      //hover states on the static widgets
+      $('#dialog_link, ul#icons li').hover(
+					function () { $(this).addClass('ui-state-hover'); },
+					function () { $(this).removeClass('ui-state-hover'); }
+				);
+
+      
+          $("#dialog").dialog({
+              autoOpen: false,
+              modal: true,
+              width: 620,
+              height: 700,
+              buttons: {
+                  "Ok": function () {
+                      $(this).dialog("close");
+                  },
+                  "Cancel": function () {
+                      $(this).dialog("close");
+                  }
+              }
+          });
+
+          $('.myButton').hover(function () {
+              $(this).bgFade('fadeIn');
+          }, function () {
+              $(this).bgFade('fadeOut');
+          });
+
+          
+
+      });
+
+      
+  </script>
+</head>
+
+<body>
+<div id="header">
+
+<h1><a href="/">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 
+Bediening ? Leierskap ? Netwerkbou</a></h1>
+<div>
+<ul id="navlist" class="css3menu1"> <li class="topfirst"><a href="@Url.Content("~")" id="current">Tuis</a></li>
+<li><a href="@Url.Content("~/Store/")">Biblioteek</a></li>
+<li><a href="@Url.Content("~/StoreManager/")">Ondersteunings Netwerke</a></li>
+<li><a href="@Url.Content("~/Projects/")">Projekte</a></li>
+<li><a href="@Url.Content("~/StoreManager/")">Kontak Ons</a></li>
+</ul>
+</div>
+
+@{Html.RenderAction("GenreMenu", "Store");}
+
+
+<div id="main"> 
+    @RenderBody()
+</div>
+<div class="top">
+        <iframe src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fplatform&amp;width=292&amp;colorscheme=light&amp;show_faces=true&amp;border_color&amp;stream=true&amp;header=true&amp;height=427" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:292px; height:427px;" allowTransparency="true"></iframe>
+    </div>
+<div id="footer">
+built with <a href="http://asp.net/mvc">ASP.NET MVC 3</a>
+</div>
+
+</body>
+
+
+
+</html>

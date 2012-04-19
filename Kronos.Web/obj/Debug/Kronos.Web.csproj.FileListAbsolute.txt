@@ -1,0 +1,5 @@
+C:\Dev2\Kronos\Kronos.Web\bin\Kronos.Web.dll
+C:\Dev2\Kronos\Kronos.Web\bin\Kronos.Web.pdb
+C:\Dev2\Kronos\Kronos.Web\obj\Debug\ResolveAssemblyReference.cache
+C:\Dev2\Kronos\Kronos.Web\obj\Debug\Kronos.Web.dll
+C:\Dev2\Kronos\Kronos.Web\obj\Debug\Kronos.Web.pdb
